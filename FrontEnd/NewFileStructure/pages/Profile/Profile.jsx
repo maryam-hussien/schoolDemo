@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./profile.css";
-import profileImg from "../../assets/Images/profile.jpg";
+import profileImg from "../../assets/images/profile.jpg";
 import ProfileBar from "../../features/profile/ProfileBar/ProfileBar";
 import { Route, Routes } from "react-router-dom";
 import ProfileScores from "../../features/profile/ProfileScores/ProfileScores";

@@ -1,5 +1,5 @@
 import StarRating from "./Star";
-import imag from "../../../NewFileStructure/assets/Images/ISO_C++_Logo.svg 1.png";
+import imag from "../../../NewFileStructure/assets/images/ISO_C++_Logo.svg 1.png";
 
 const CourseCard = ({ course, rating, handleStarClick }) => (
   <div

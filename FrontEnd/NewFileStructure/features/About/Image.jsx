@@ -1,4 +1,4 @@
-import img from '../../assets/Images/photo_2025-01-03_00-20-52-removebg-preview.png'
+import img from '../../assets/images/photo_2025-01-03_00-20-52-removebg-preview.png'
 import '../../pages/About/about.css'
 const Image=()=>{
   

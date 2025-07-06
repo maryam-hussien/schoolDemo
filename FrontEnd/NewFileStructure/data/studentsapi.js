@@ -1,5 +1,5 @@
 // Step 2: Import the photo
-import defaultPhoto from '../assets/Images/1249636d803793f0d04ae77ab50097c7.jpg'; // Adjust the path according to your folder structure
+import defaultPhoto from '../assets/images/1249636d803793f0d04ae77ab50097c7.jpg'; // Adjust the path according to your folder structure
 
 const students = [
   {
