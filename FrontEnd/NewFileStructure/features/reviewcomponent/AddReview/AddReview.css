@@ -1,0 +1,51 @@
+@import url('../../../assets/global.css');
+
+.AddPost {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 0.5rem 0.75rem;
+margin: auto;
+width: 100%;
+}
+.AddPost h5{
+  font-family: var(--descrFont);
+}
+.AddPost textArea{
+font-family: var(--descrFont);
+}
+
+.addpostLastSec {
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #007bff; /* Bootstrap primary color */
+}
+.switchbtn{
+  display: flex;
+  
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .AddPost {
+    width: 90%; /* Slightly smaller width on extra small screens */
+  }
+}
+@media (max-width: 576px) {
+  .AddPost {
+    width: 90%; /* Slightly smaller width on extra small screens */
+  }
+  .addpostLastSec button{
+    width: 95%;
+    padding: 0.25rem;
+  }
+
+  .image-icon {
+    font-size: 20px; /* Smaller icon on smaller screens */
+  }
+}

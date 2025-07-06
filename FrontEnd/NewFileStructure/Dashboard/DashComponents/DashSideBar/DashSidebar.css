@@ -1,0 +1,49 @@
+.dashSidebar {
+  background-color: black;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 20%;
+  opacity: 90%;
+  min-height :150vh;
+  height: auto;
+}
+.logo-img {
+  height: 40px;
+  max-width: 70%;
+  object-fit: contain;
+}
+
+.icon-link {
+  opacity: 70%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  color: #fddb88; /* icon link color */
+}
+
+/* Add hover effect */
+.icon-link:hover {
+  opacity: 0.8;
+  text-decoration: none; /* Ensure underline is still removed */
+}
+
+.icon-link-hover {
+  transition: color 0.2s, opacity 0.2s;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  /* Hide the text in the sidebar */
+  .icon-link span {
+    display: none;
+  }
+
+  /* Ensure that the icons remain centered */
+  .icon-link {
+    justify-content: center;
+  }
+
+
+}

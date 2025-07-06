@@ -1,0 +1,22 @@
+.topSideBar {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+  .topSideBar a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Use the inherited text color */
+}
+.dashNavTitle:hover{
+color: black;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .topSideBar span {
+    font-size: 17px; /* Adjust font size for smaller screens */
+  }
+}
+

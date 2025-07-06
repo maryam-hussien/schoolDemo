@@ -1,0 +1,71 @@
+.announcement{
+  height: auto;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.announcementCard{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+  width: 60%;
+  padding: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 10px solid var(--secondry);
+  font-family: var(--descrFont);
+
+}
+
+
+.announcementCard h5 {
+  font-family: var(--descrFont);
+  margin-bottom: 0; /* Prevent margin below the h5 */
+}
+
+.topcard {
+  width: fit-content; /* Ensure the width is based on the content */
+  margin-bottom: 10px; /* Optional: Adds spacing below .topcard */
+}
+
+.announcementCard .topcard hr {
+  width: 100%;  /* Make hr take the full width of the parent (.topcard) */
+  height: 2px;  /* Adjust the thickness of hr */
+  border: none; /* Remove default border style */
+  background-color: var(--font-high-light); /* Same color as the course name */
+  margin-top: 0;  /* Remove space above hr */
+  margin-bottom: 10px; /* Optional: Adds spacing below hr */
+}
+
+
+.announcementCard button{
+  align-self: start;
+  margin-top: 0;
+  margin-bottom:0.5rem;
+  font-size:15px;
+  color: var(  --secondry);
+}
+.announcementCard button:hover{
+  color: var(--font-high-light); /* Change text color on hover and active */
+}
+.announcementCard button:active {
+  color: var(--font-high-light); /* Change text color on hover and active */
+
+}
+
+.announcementCard p{
+  margin-bottom: 0;
+}
+.announcementTitle{
+  font-family:var(--titleFont);
+  margin-left: 20%;
+  text-align: left;
+  color: var(--font-high-light);
+  font-weight: bold;
+}
+.announcement h4{
+  font-family:var(--titleFont);
+color: var(--font-high-light);
+margin-left: 20%;
+margin-top: 0.5rem;
+}

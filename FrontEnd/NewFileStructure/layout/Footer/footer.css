@@ -1,0 +1,17 @@
+@import url('../../assets/global.css');
+
+.footerColor{
+  background-color: var(--secondry);
+}
+.footerSecColor{
+  background-color: #04252b93;
+}
+.footerFont{
+  color: var(--white);
+}
+.footerText{
+  font-size: smaller;
+}
+.yellow{
+  color: var(--gold);
+}

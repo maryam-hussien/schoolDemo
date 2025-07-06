@@ -1,0 +1,42 @@
+
+.d-announcement-card{
+  width: 90%;
+  padding: 0.5rem;
+  margin:1rem 0;
+border-radius: 7px;
+border:1px solid #dbdbdb;
+}
+.d-announcement-card .cardHead{
+  display: flex;
+  justify-content: space-between;
+}
+.d-announce-title{
+  margin: 1.2rem auto 1rem auto;
+  text-align: center;
+
+}
+.d-no-announcements{
+  margin: 0.5rem auto ;
+  text-align: center;
+
+}
+
+.announcement-textarea-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+}
+
+
+.announcement-textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  resize: none;
+}
+
+

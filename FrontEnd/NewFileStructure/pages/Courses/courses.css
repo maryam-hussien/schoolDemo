@@ -1,0 +1,249 @@
+@import url('../../assets/global.css');
+
+.courses {
+  min-height: 100vh;
+  font-family: var(--titleFont);
+}
+.fsection {
+  height: 230px;
+  background-color: var(--font-high-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 190px;
+  position: relative;
+}
+.fsection h1 {
+  top: 120px;
+  position: relative;
+  color: var(--white);
+  font-family: var(--titleFont);
+  margin: 0;
+  font-size: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 140px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--bodyFont);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a.active {
+  border-bottom: 10px solid var(--white);
+}
+
+.fsec {
+  margin-top: 20px;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 180px;
+  padding-right: 140px;
+  padding-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap; 
+  text-align: center;
+}
+
+.fsec button,
+.fsec input {
+  border-radius: 25px;
+  border: 1px solid var(--font-high-light);
+  background-color: var(--white);
+  min-width: 150px;
+  max-width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--titleFont);
+  color: var(--font-high-light);
+  padding: 10px;
+  text-align: center;
+  display: inline-block; 
+  width: auto; 
+}
+
+.fsec button:hover {
+  background-color: var(--font-high-light);
+  border: none;
+  color: var(--white);
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center; 
+  gap: 10px; 
+  padding: 10px;
+}
+.iconsearch{
+  position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+}
+.course-card {
+  flex: 1 1 250px;
+  max-width: 250px;
+  margin: 10px; 
+  height: 350px;
+  background: var(--white);
+  padding: 15px;
+ font-family: var(--titleFont);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-grid .imagcourse img {
+  width: 150px;
+}
+.imagcourse{
+  height: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  border: none;
+  color: var(--black);
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background: var(--font-high-light);
+  color: var(--white);
+}
+
+
+
+@media (width: 1024px) {
+  .fsection {
+    height: 230px;
+    background-color: var(--font-high-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    position: relative;
+  }
+}
+
+@media (max-width: 780px) {
+  .iconsearch{
+    position: absolute;
+          top: 65%;
+          left: 10px;
+          transform: translateY(-50%);
+  }
+  .fsection {
+    height: 230px;
+    background-color: var(--font-high-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    position: relative;
+  }
+
+  .fsec input {
+    border-radius: 25px;
+    border-color: var(--font-high-light);
+    width: 80px;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500px;
+    font-family: var(--titleFont);
+    color: var(--font-high-light);
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .fsec {
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 180px;
+    padding-right: 140px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .fsec input {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .course-grid {
+    padding: 10px;
+  }
+
+  .course-card {
+    height: auto;
+    padding: 10px;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .iconsearch{
+    position: absolute;
+          top: 65%;
+          left: 10px;
+          transform: translateY(-50%);
+  }
+  .fsection h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    margin-top: 170px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .fsec button {
+    font-size: 16px;
+    width: 100%;
+  }
+
+
+
+  .pagination button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}

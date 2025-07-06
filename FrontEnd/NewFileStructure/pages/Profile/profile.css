@@ -1,0 +1,211 @@
+@import url('../../assets/global.css');
+
+.profile{
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+}
+.profileContinater{
+  width: 100%;
+  height: auto;
+  margin-top: 12%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  position: relative;
+}
+.profileImgCont{
+  width: fit-content;
+  height: fit-content;
+position: absolute;
+top:-55px;
+left: 45%;
+}
+.profileImg{
+  width:150px ;
+  border: 2px solid;
+  border-radius: 100px;
+  border-color: #fddb88;
+}
+.profilename{
+  margin-top: 5%;
+  font-size: calc(1.275rem + .3vw);
+  width: fit-content;
+  font-family: var(--titleFont);
+  font-weight: 500;
+}
+.bar{
+  font-size: 1.25rem;
+  background-color: var(--secondry);
+  border-radius: 13px;
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  
+
+}
+.ProfilemainTitle{
+  font-family: var(--titleFont);
+  font-weight: 600;
+}
+
+.gradeCard{
+  border-radius: 23px;
+  padding: 1rem;
+  width: 88%;
+  font-family: var(--titleFont);
+  font-weight: 600; 
+ 
+}
+.profilebtn{
+  text-align: center;
+align-self: end;
+}
+.secTitleProfile{
+  font-family: var(--heroDescrFont);
+  font-weight: 600; 
+
+}
+.grades{
+  justify-content: space-between;
+
+}
+/* Media query for screens less than 1440px wide */
+
+
+
+/* Media query for screens less than 1200px wide */
+@media (max-width: 1200px) {
+  .profile {
+    margin-top: 3%;
+  }
+  .profileImg{
+    width: 130px;
+  }
+}
+
+
+
+/* Media query for screens less than 768px wide (tablets) */
+@media (max-width: 768px) {
+  .profile {
+    margin-top: 5%;
+  }
+  .profileContinater{
+    margin-top: 17%;
+  }
+  .profileImg{
+    width: 120px;
+  }
+  .bar{
+    font-size: 1.15rem;
+  }
+  .profileImgCont{
+    left: 43%;
+  }
+}
+@media (max-width: 668px) {
+
+  .profileContinater{
+    margin-top: 23%;
+  }
+  .profileImg{
+    width: 110px;
+  }
+  .bar{
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .profileImgCont{
+    left: 41%;
+  }
+}
+
+/* Media query for screens less than 576px wide (large mobile) */
+@media (max-width: 576px) {
+ 
+  .profileContinater{
+    margin-top: 25%;
+  }
+  .profileImg{
+    width: 100px;
+  }
+}
+/* Media query for screens less than 480px wide (small mobile) */
+@media (max-width: 480px) {
+  
+  .profileContinater{
+    margin-top: 25%;
+  }
+  .profileImg{
+    width: 90px;
+  }
+}
+
+
+
+/* Media query for screens less than 480px wide (small mobile) */
+@media (max-width: 425px) {
+  .profile {
+    margin-top: 11%;
+  }
+  .profileContinater{
+    margin-top: 25%;
+  }
+  .profileImgCont{
+    top:-43px;
+    left: 40%;
+  }
+  .bar{
+    font-size: 1rem;
+    padding: 0.5rem;
+  
+  }
+  .gradeCard{
+    width: 100%;
+  }
+
+}
+
+
+/* Media query for screens less than 360px wide (very small mobile) */
+@media (max-width: 375px) {
+  .profile {
+    margin-top: 18%;
+  }
+  .profileContinater{
+    margin-top: 27%;
+  }
+  .profileImgCont{
+    top:-45px;
+  }
+  .profilename{
+    font-size: 1.275rem;
+  }
+  .profileImgCont{
+    left: 40%;
+  }
+  .gradeCard{
+width: 100%;
+  }
+}
+
+/* Media query for screens less than 320px wide (ultra-small mobile) */
+@media (max-width: 320px) {
+  .profile {
+    margin-top: 18%;
+  }
+  .profileContinater{
+    margin-top: 40%;
+  }
+  .profileImgCont{
+    top:-40px;
+  }
+}

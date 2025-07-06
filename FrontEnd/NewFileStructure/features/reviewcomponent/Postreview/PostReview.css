@@ -1,0 +1,119 @@
+@import url('../../../assets/global.css');
+
+.PostCard{
+  background-color: var(--white);
+  border-radius: 18px;
+  width: 100%;
+   margin: 0.5rem auto ;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.socialTopCard{
+  display: flex;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+.socialTopCard img{
+  max-width: 40px;
+  height: 40px;
+  margin-right: 0.25rem;
+  border-radius: 200px;
+}
+.socialTopCard div{
+  font-family: var(--descrFont);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.socialpostsection {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.socialpostsection p{
+  font-family: var(--descrFont);
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.socialpostsection img{
+  width: 100%;
+  max-height: 429px;    /* Maintains aspect ratio */
+  height: 100%;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.socialdivider {
+  width: 97%; /* or whatever width you need */
+  height: 2px; /* gives the hr a height */
+  background-color: rgb(145, 145, 145); /* sets a background color */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* adds shadow */
+  margin: 10px auto 5px ; /* optional: adds some spacing */
+}
+.ActionNumbers{
+  font-family: var(--descrFont);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  opacity: 80%;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+}
+.Postactions{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: var(--descrFont);
+
+}
+.comment-section{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+/* Styling for the comment textarea */
+.comment-section textarea {
+  font-family: var(--descrFont);
+  width: 90%;   /* Adjust width to make it smaller */
+  height: 50px; /* Decrease the height */
+  border-radius: 8px; /* Optional: add some border radius for smoother edges */
+  padding: 8px; /* Add padding for better readability */
+  margin-top: 5px; /* Adjust spacing */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;  /* Smaller font for compact appearance */
+}
+
+/* Styling for the comment button */
+.comment-section button {
+  font-family: var(--descrFont);
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;  /* Decrease the button width */
+  height: auto;  /* Decrease the button height */
+  margin-top: 10px; /* Add some space above the button */
+  font-size: 14px;  /* Adjust font size */
+  padding: 5px;     /* Adjust padding for a compact look */
+  border-radius: 5px; /* Optional: border radius for a rounded button */
+}
+@media (max-width: 768px) {
+  .comment-section button {
+    width: 30%;  /* Further increase width for small mobile screens */
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .comment-section button {
+    width: 30%;  /* Further increase width for small mobile screens */
+    font-size: 10px; /* Reduce font size for smaller screens */
+  }
+  .socialLikes , .socialComments{
+    font-size: 13px;
+  }
+  .socialTopCard div{
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,78 @@
+@import url('../../assets/global.css');
+
+.Social{
+  height: auto;
+  background-color: var(--font-high-light);
+  border-radius: 10px;
+  margin: 0px auto 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+}
+.SocialDiv{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 7%;
+  border-radius: 15px;
+}
+.SocialTitle{
+
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  padding: 0.25rem;
+  color: white;
+  font-family: var(--titleFont);
+}
+
+.reviewroute{
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  padding: 0.25rem;
+  color: white;
+  font-family: var(--titleFont);
+  text-align: right;
+}
+.SocialImg {
+  width: 100%; /* Make image responsive */
+  max-width: 320px; /* Set max width for small screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  
+  .Social{
+  margin-top: 11%;
+  }
+  .SocialImg {
+    max-width: 60%; /* Full width on smaller screens */
+    margin: auto;
+  }
+
+  /* Ensure AddPost takes 100% width */
+  .AddPost {
+    width: 100%; /* AddPost takes full width */
+  }
+  .SocialTitle {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    padding: 0.2rem; /* Reduced padding */
+  }
+}
+
+
+
+@media (max-width: 576px) { /* For mobile devices */
+  .SocialTitle {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin-bottom: 0.5rem; /* Reduced margin */
+    padding: 0.15rem; /* Further reduced padding */
+  }
+  .Social{
+    margin-top: 20%;
+    }
+}

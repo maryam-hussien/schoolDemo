@@ -1,0 +1,25 @@
+.dashHome{
+height: auto;
+}
+.dashboard {
+  height: auto; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;  /* Default padding */
+  width: 70%;
+}
+
+/* For screens smaller than 768px (small screens like mobile devices) */
+@media (max-width: 768px) {
+  .dashboard {
+
+    padding: 0.5rem;  /* Reduce padding on small screens */
+  }
+}
+
+/* For screens smaller than 576px (extra small screens like small mobile devices) */
+@media (max-width: 576px) {
+  .dashboard {
+    padding: 0.25rem;  /* Further reduce padding on very small screens */
+  }
+}

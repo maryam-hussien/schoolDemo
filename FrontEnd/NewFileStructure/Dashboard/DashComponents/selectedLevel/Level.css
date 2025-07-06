@@ -1,0 +1,13 @@
+
+/* Ensure the form inputs are displayed in a single row */
+ .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between form controls */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.form-control {
+  flex: 1; /* Ensure each form control takes up equal width */
+  min-width: 150px; /* Set a minimum width to avoid collapsing */
+}

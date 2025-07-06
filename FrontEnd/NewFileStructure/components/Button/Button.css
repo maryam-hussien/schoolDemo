@@ -1,0 +1,56 @@
+/* Base button styles */
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  /* Color variations */
+  .btn.primary {
+    background-color: var(--font-high-light);
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background-color: var(--secondry);
+  }
+  
+  .btn.secondary {
+    background-color: var(--secondry);
+    color: white;
+  }
+  
+  .btn.secondary:hover {
+    background-color: var(--font-high-light);
+  }
+  
+  .btn.tertiary {
+    background-color: var(--gold);
+    color: black;
+  }
+  
+  .btn.tertiary:hover {
+    background-color: var(--secondry);
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .btn {
+      font-size: 0.9rem;
+      width: 160px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      width: 140px;
+      font-size: 0.85rem;
+    }
+  }
+  

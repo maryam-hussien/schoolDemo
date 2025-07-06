@@ -1,0 +1,75 @@
+.dash-btn-add-course {
+    position: fixed;
+    margin-top: 365px;
+    margin-left: 890px;
+    width: 50px; /* Button diameter */
+    height: 50px; /* Button diameter */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #fff; /* White background */
+    color: #000; /* Black plus sign */
+    font-size: 30px; /* Plus sign size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px ; /* Subtle shadow */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .dash-btn-add-course:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White plus sign */
+    transform: scale(1.1); /* Slightly scale the button on hover */
+  }
+  .add-course-form {
+    max-width: 600px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .dashComponentTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-high-light);
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 150px;
+  }
+  
+  .add-course-form .form-group {
+    margin-bottom: 15px;
+  }
+ 
+  .btn-warning{
+    margin-left: 20px;
+  }
+  .add-course-form .form-group input,
+  .add-course-form .form-group textarea,
+  .add-course-form .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-course-form .image-preview img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+  
+  .add-course-form .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 230px;
+  }
+  

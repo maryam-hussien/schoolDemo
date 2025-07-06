@@ -1,0 +1,24 @@
+.teachersPage {
+  display: flex;
+  padding: 0.25rem;
+  flex-direction: column;
+  height: auto;    
+  }
+  
+  .teachersPage h3 {
+    color: #333;
+  }
+  
+ 
+  
+  .teachers-list table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .teachers-list table th,
+  .teachers-list table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  

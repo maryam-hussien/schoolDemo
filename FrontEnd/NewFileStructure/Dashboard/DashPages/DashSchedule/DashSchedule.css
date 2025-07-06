@@ -1,0 +1,102 @@
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.schedulebtns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.scheduleedit-btn, .scheduledelete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scheduleedit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.scheduledelete-btn {
+  background-color: #f44336;
+  color: white;
+}
+/* Center the table, reduce its width, and add margins */
+.manage-schedules.table {
+  width: 80%; /* Reduce the table width */
+  margin: 20px auto; /* Center the table by adding automatic margins */
+  border-collapse: collapse;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.manage-schedules .table th,.manage-schedules .table td {
+  padding: 12px; /* Add padding for table cells */
+  text-align: left;
+  border: 1px solid #ddd; /* Add border to cells for clear separation */
+}
+
+/* Buttons inside table */
+.schedulebtns {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Add space between edit and delete buttons */
+}
+
+.scheduleedit-btn, .scheduledelete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scheduleedit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.scheduledelete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+
+/* Styling for extra small screens (phones and below) */
+@media (max-width: 576px) {
+
+
+  /* Decrease font size and remove padding */
+  .manage-schedules .table {
+    font-size: 0.75rem; /* Reduce font size more for phones */
+  }
+
+  .manage-schedules table.table td, .manage-schedules table.table th {
+    padding: 0.15rem; /* Further reduce padding */
+    width: auto; /* Adjust width dynamically */
+  }
+
+  
+
+  /* Wrap the table on smaller screens */
+  .manage-schedules .table-responsive {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap; /* Prevent columns from being squeezed */
+  }
+
+  /* Ensure td wraps when necessary */
+  .manage-schedules table.table td, table.table th {
+    white-space: normal; /* Allow the content to wrap in cells */
+  }
+}
+

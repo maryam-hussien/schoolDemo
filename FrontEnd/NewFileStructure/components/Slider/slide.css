@@ -1,0 +1,80 @@
+@import url('../../assets/global.css');
+.relative {
+    position: relative;
+    width: 100%; 
+}
+
+.slick-list,
+.slick-track {
+    width: 100%;
+    margin: 0; 
+}
+
+.slick-slide {
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slick-slide img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px; 
+    border-radius: 50%;
+    display: block;
+}
+
+.slick-slide .p-4 {
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+@media (max-width: 1440px) {
+    .slick-slide {
+        width: 25%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .slick-slide {
+        width: 50%; 
+    }
+
+    .slick-slide img {
+        max-width: 150px;
+        height: 150px;
+    }
+}
+
+@media(width>=1440px){
+    .slick-initialized .slick-slide {
+        display: flex !important;
+       
+    }
+}
+@media (max-width: 480px) {
+    .slick-slide {
+        width: 100%; 
+    }
+
+    .slick-slide img {
+        width: 90px;
+        height: 90px; 
+        display: list-item;
+        margin: auto;
+    }
+
+    .slick-slide .p-4 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}

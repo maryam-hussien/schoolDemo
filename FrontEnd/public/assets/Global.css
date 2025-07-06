@@ -1,0 +1,14 @@
+:root {
+    --background-color: #E5FCFF;
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-high-light: #0A505B;
+    --secondry: #148B9C;
+    --gold:#FFCB5B;
+    --green:#00A300;
+    --red:D10003;
+    --linear-gradient:(90deg, #0A505B 0%, #148B9C 100%);
+    --titleFont:Outfit;
+   --heroDescrFont: Inter;
+   --descrFont:Roboto;
+  }

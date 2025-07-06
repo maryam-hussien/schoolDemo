@@ -1,0 +1,14 @@
+
+
+/* For active tabs */
+a.active {
+  background-color: rgba(255, 255, 255, 0.342); /* Same light transparent white for active */
+  color: white; /* Keep text white */
+  border-radius: 20px;
+}
+
+.bar a{
+  padding: 3px 8px;
+  font-family: var(--titleFont);
+  font-weight: 500;
+}

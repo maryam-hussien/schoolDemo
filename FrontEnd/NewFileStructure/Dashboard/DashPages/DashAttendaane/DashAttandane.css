@@ -1,0 +1,48 @@
+.dashAttendance {
+  display: flex;
+  padding: 0.25rem;
+  flex-direction: column;
+  height: auto;
+}
+
+
+.dashAttendance .table {
+  width: 70%; /* Reduce the table width */
+  margin: 20px auto; /* Center the table by adding automatic margins */
+  border-collapse: collapse;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+
+.dashAttendance .table th,.dashAttendance .table td {
+  padding: 12px; /* Add padding for table cells */
+  text-align: left;
+  border: 1px solid #ddd; /* Add border to cells for clear separation */
+}
+
+/* Styling for extra small screens (phones and below) */
+@media (max-width: 768px) {
+
+  /* Decrease font size and remove padding */
+  .dashAttendance .table {
+    font-size: 0.75rem; /* Reduce font size more for phones */
+  }
+
+  .dashAttendance table.table td, .dashAttendance table.table th {
+    width: auto; /* Adjust width dynamically */
+  }
+
+  
+
+  /* Wrap the table on smaller screens */
+  .dashAttendance .table-responsive {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap; /* Prevent columns from being squeezed */
+  }
+
+  /* Ensure td wraps when necessary */
+  .dashAttendance table.table td, .dashAttendance table.table th {
+    white-space: normal; /* Allow the content to wrap in cells */
+  }
+}

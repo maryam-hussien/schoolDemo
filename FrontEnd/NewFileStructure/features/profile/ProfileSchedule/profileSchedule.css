@@ -1,0 +1,74 @@
+.ProfileScheduleSection {
+  border-radius: 13px;
+  background-color: #cdeef1;
+  padding: 1.5rem;
+  min-width: 89%;
+}
+/* Default table styling */
+.ProfileScheduleSection  table.table th, table.table td {
+  text-align: center; /* Center align text in all cells */
+  vertical-align: middle; /* Vertically center text */
+}
+
+
+.ProfileScheduleSection table.table thead th {
+  background-color: #148B9c; /* Dark green for header background */
+  color: white; /* White text in the header */
+  font-family: var(--titleFont);
+
+}
+.ProfileScheduleSection table.table td{
+  font-family: var(--heroDescrFont);
+}
+
+/* Styling for medium and small screens (tablets and below) */
+@media (max-width: 768px) {
+  .ProfileScheduleSection {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  /* Make table more compact on small screens */
+  .ProfileScheduleSection table.table {
+    font-size: 0.85rem; /* Reduce font size further */
+  }
+
+  .ProfileScheduleSection table.table td, table.table th {
+    padding: 0.2rem; /* Reduce padding */
+    width: auto; /* Let the width of cells adjust dynamically */
+  }
+}
+
+/* Styling for extra small screens (phones and below) */
+@media (max-width: 576px) {
+  .ProfileScheduleSection {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  /* Decrease font size and remove padding */
+  .ProfileScheduleSection table.table {
+    font-size: 0.75rem; /* Reduce font size more for phones */
+  }
+
+  .ProfileScheduleSection table.table td, table.table th {
+    padding: 0.15rem; /* Further reduce padding */
+    width: auto; /* Adjust width dynamically */
+  }
+
+  .ProfileScheduleSection table.table td {
+    word-break: break-word; /* Break long words for better wrapping */
+  }
+
+  /* Wrap the table on smaller screens */
+  .ProfileScheduleSection .table-responsive {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap; /* Prevent columns from being squeezed */
+  }
+
+  /* Ensure td wraps when necessary */
+  .ProfileScheduleSection table.table td, table.table th {
+    white-space: normal; /* Allow the content to wrap in cells */
+  }
+}
